@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://rawgit.com/GMaxera/angularjs-slider/master/dist/rzslider.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>CarmaCam Ml Tool</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+          integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/mlTraining.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+            integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
+            crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="lib/intlTelInput.css">
+    <script src="lib/intlTelInput.js"></script>
+</head>
+<body>
+<div id='logo' width="100%" style="background-color:white">
+    <a href='index.html'><img src='' height="100px"></a>
+</div>
+<div ng-app="myApp" ng-controller="mlTrainingPage">
+   <div class="container">
+        <div class = "col-xs-3"></div>
+            <div class=" col-xs-6 ">
+                <div class = "full_video">
+
+                  <player attribute-foo="{{start}}"></player>
+                 
+                <div class = "col-xs-3"></div>
+                <div class = "col-xs-6 capture_btn">
+                    <button class="btn btn-default" id="capture_btn">Capture</button>
+                </div>
+                <div class = "col-xs-3"></div>
+                
+            </div>
+        </div>
+        <div class = "col-xs-3"></div>
+        <div class="col-xs-6">
+            <div class =" start_image">  Start Image
+            
+            </div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-2">
+                <button class="btn btn-default" id="annotate_st">Annotate</button>
+            </div>
+        </div>
+        <div class="col-xs-6 ">
+            <div class = "end_image">End Image</div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-2">
+                <button class="btn btn-default" id="annotate_end">Annotate</button>
+            </div>
+        </div>
+    
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/mlTrainingPage.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>
